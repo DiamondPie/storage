@@ -1,0 +1,78 @@
+name: Copyright Infringement Report
+description: Report a resource that may infringe your copyright or the rights of another party.
+title: "[Infringement] "
+labels:
+* Infringement
+
+assignees:
+* DiamondPie
+
+body:
+
+* type: markdown
+  attributes:
+  value: |
+  ## Copyright Infringement Report
+
+  ```
+  Thank you for bringing this to my attention.
+
+  This repository contains some static resources used by my projects, and some materials may originate from third parties on the internet.
+
+  If you believe that a resource in this repository infringes your copyright or other applicable rights, please provide the information below. I will review the report and, where appropriate, remove the reported material promptly.
+  ```
+
+* type: input
+  id: resource
+  attributes:
+  label: Infringing Resource
+  description: Please provide the URL or path of the resource you believe infringes copyright.
+  placeholder: "e.g. https://github.com/DiamondPie/storage/blob/main/example/file.png"
+  validations:
+  required: true
+
+* type: textarea
+  id: original-work
+  attributes:
+  label: Original Work
+  description: Please provide a link to the original work or other evidence demonstrating your copyright ownership, if available.
+  placeholder: "Link to the original work, website, publication, etc."
+  validations:
+  required: false
+
+* type: textarea
+  id: copyright-owner
+  attributes:
+  label: Copyright Ownership
+  description: Please briefly explain your relationship to the copyrighted work and why you are authorized to make this report.
+  placeholder: "I am the copyright owner / authorized representative of the copyright owner..."
+  validations:
+  required: true
+
+* type: textarea
+  id: explanation
+  attributes:
+  label: Explanation
+  description: Please explain why you believe the reported resource infringes your copyright.
+  placeholder: "Please describe the issue and provide any relevant details."
+  validations:
+  required: true
+
+* type: input
+  id: contact
+  attributes:
+  label: Contact Information
+  description: Please provide a way to contact you if clarification is required. Do not include sensitive personal information.
+  placeholder: "Email or other preferred contact method"
+  validations:
+  required: false
+
+* type: checkboxes
+  id: confirmation
+  attributes:
+  label: Confirmation
+  options:
+  - label: I believe in good faith that the reported material is not authorized by the copyright owner, its agent, or the law.
+  required: true
+  - label: The information provided in this report is accurate to the best of my knowledge.
+  required: true
