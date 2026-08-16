@@ -2,7 +2,7 @@ name: Copyright Infringement Report
 description: Report a resource that may infringe your copyright or the rights of another party.
 title: "[Infringement] "
 labels:
-  - Infringement
+  - infringement
 assignees:
   - DiamondPie
 
